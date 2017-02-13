@@ -1,10 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <!--<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <link type="text/css" href="styles/style.css" rel="stylesheet">
+    <link type="twxt/css" href="styles/grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mouse/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>hello</h1>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <!--nav-->
+    <nav class="nav-transperent" id="nav">
+        <div class="nav-container">
+            <!--logo-->
+            <!--<img class="logo" src="background img/Logo 2.png" alt="logo" width="330px" height="auto">-->
+            <img class="logo" src="background img/Logo.png" alt="logo" width="330px" height="auto">
+            <!--menu-->
+            <div class="nav-menu-container">
+                <ul class="nav-menu-bar">
+                    <li>
+                        <a href="#" id="home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" id="#about-me">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#" id="technologies">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#" id="contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-content">
+                <h1>Hello! I am Ivaylo Andonov!</h1>
+                <p>Web Front End Developer</p>
+            </div>
+
+            <!--Mouse animated-->
+            <div class="mouse_wrapper">
+                <div class="mouse_animated">
+                    <div class="scroll"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <article>
+        <!--about-me-->
+        <div class="about-me-wrapper" id="about-me">
+            <div class="grid">
+                <div class="row">
+                    <!--<div class="about-me">-->
+                        <h2 class="col-md-12">About me</h2>
+                        <!--<div class="col-md-12"><h2>About me</h2><br><p>A passionate developer</p></div>-->
+                        <div class="col-md-4 my-photo-container">
+                            <img src="images/IMG_20170209_140209.png" class="my-photo" alt="my photo" width="200px" height="200px">
+                        </div>
+                        <div class="col-md-8 content">
+                            <p>
+                                As part of Telerik Academy I had the chance to assimilate fundamental, but also specific types of knowledge about Programming
+                                as a whole. All the technologies I’ve been exploring gave me the freedom to reveal my flair
+                                how a perfect project must be shaped. My passion now is mostly Front- End Developing. I enjoy
+                                the process of generating an initial idea of a product, framing a content and finishing up
+                                with awesome design. I simple quote helps me in my career: “You are what you believe!” –
+                                and I strongly believe that creating clean and well-considered projects makes a statement
+                                for success.
+                            </p>
+                        </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+         <!--skills-->
+        <div class="grid">
+            <div class="row">
+                <div class="skills-container">
+                    <h2>Technical skills</h2>
+                </div>
+                <div class="html col-md-4">
+                    <h3>HTML</h3>
+                </div>
+                <div class="html col-md-4">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <div class="html col-md-4">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+        </div>
+        <!--github-profile-->
+        <div class="my-code-wrapper">
+            <div class="opacity">
+                <div class="grid">
+                    <div class="row">
+                        <div class="portfolio-height">
+                            <div class="portfolio col-md-12">
+                                <h2 class="white">Chek some of my code</h2>
+                                <a href="https://github.com/ivailoAndonov" class="github">
+                                    <img src="images/GitHub_Logo.png" alt="github-logo" class="github" width="200px" height="auto">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!--contacts-->
+       <div class="contacts-wrapper">
+           <div class="grid">
+               <div class="row">    
+                   <div class="col-md-12">
+                       <h2>Contact me</h2>
+                       <div class="email"><a href="#">gosho[at]abv.bg</a></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </article>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <p class="center">Copyright &copy 2017
+                <a href="#">My portfolio</a> - Powered by
+                <a class="autor-name" href="#">ivailo Andonov</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>

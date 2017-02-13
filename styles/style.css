@@ -1,0 +1,387 @@
+
+body{
+    margin: 0;
+}
+
+h1, h2{
+    font-family: 'Nixie One', cursive;
+    margin: 0;
+    color: #302F2B;
+}
+h1{
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    font-family: 'Nixie One', cursive;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    color: #555555;
+}
+p{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: gray;
+    font-weight: 200;
+}
+.white{
+    color: white;
+}
+
+
+/*nav*/
+.nav-transperent{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: whiteOff;
+    animation-duration: 0.6s;
+    background-color: transparent;
+
+    /*box-shadow: 0 1px 30px #888;
+    background-color: white;*/
+}
+
+.logo{
+    margin-top: 6px;
+    margin-left: 6%;
+}
+
+.nav-menu-container{
+    margin-top: 10px;
+    margin-right: 8%;
+    font-family: Arial, sans-serif;
+    float: right;
+}
+
+ul{
+   padding: 0;
+}
+
+ul li{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul li a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #302F2B;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/*header*/
+.header-wrapper{
+    background-image: url("../background img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 680px;
+
+    /*position: relative;*/
+}
+
+.header-content{
+    position: fixed;    
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+
+    /*position: relative;*/
+}
+
+
+/*article*/
+article{
+    box-shadow: 0 1px 30px #302F2B;
+}
+.about-me-wrapper{
+    width: 100%;
+    /*height: 1500px;*/
+    background-color: #FBFBFC;
+    position: relative;
+}
+/*.about-me{
+    display: block;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 120px;
+}*/
+.my-photo-container{
+    margin-top: 10px;
+}
+.my-photo{
+    border-radius: 50%;
+    display: block;
+    margin: 12px auto;
+    visibility:hidden;
+}
+.content{
+    background-color: white;
+    margin-top: 18px;   
+    margin-bottom: 18px;
+}
+.content p{
+    letter-spacing: 0.04em;
+    line-height: 140%;
+    padding: 30px 60px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+}
+
+
+/*.portfolio a{
+    border-radius: 20px;
+    color: #00887A;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Metric,Arial,Gadget,sans-serif;
+    font-weight: bold;
+    border: 2px solid gray;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+.portfolio a:hover{
+    background-color: #b2b3b3;
+}
+.portfolio a:active{
+    background-color: #2F9C91;
+}*/
+
+
+/*Some of my code*/
+.my-code-wrapper{
+    background-image: url("../images/xrvdyzrgdw4-emile-perron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*position: relative;*/
+    width: auto;
+    /*height: 440px;*/
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.portfolio-height{
+    height: 200px;
+}
+.portfolio{
+    text-align: center;
+}
+.github{
+    margin: 20px;
+}
+.github:hover{
+    width: 220px;
+    height: auto;
+}
+
+/*Contact me*/
+.email{
+    text-align: center;
+    margin: 20px;
+}
+.email a{
+    font-size: 2.0em;
+    color: #00887A;
+    font-family: Arial, sans-serif; 
+}
+.email a:hover{
+    color: #00554C;
+}
+
+/*footer*/
+.footer{
+    background-color: #302F30;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.center{
+    text-align: center;
+}
+.center a:first-child{
+    color: black;
+}
+.autor-name{
+    color: #fff;
+    text-decoration: none;
+}
+.autor-name:hover{
+    text-decoration: underline;
+}
+
+/*Queries*/
+@media screen and (max-width: 840px){
+    /*header{
+        height: 620px;
+    }*/
+    ul li a{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 2.2em;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    .nav-container{
+        text-align: center;
+    }
+    .logo{
+        width: 260px;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    .nav-menu-container{
+        float: none;
+        margin-right: 0;
+    }
+
+    .header-content{
+    position: fixed;
+    top: 50%;
+    margin: 0;  
+    }
+    
+}
+
+/*Animations*/
+.hide{
+    visibility: hidden;
+}
+
+.nav-white{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0001; 
+    
+    animation-name: whiteOn;
+    animation-duration: 0.6s;
+
+    box-shadow: 0 1px 30px #302F2B;
+    background-color: white;
+}
+@keyframes whiteOn {
+    from {background-color: transparent;}
+    to {background-color: white;}
+}
+@keyframes whiteOff {
+    from {background-color: white;}
+    to {background-color: transparent;}
+}
+
+.slideUp{
+    animation-name: slideUp;
+      animation-duration: 1s;
+      visibility: visible;
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+/*col-grid*/
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+.grid{
+    margin-right: 12%;
+    margin-left: 12%; 
+
+    /*position: relative;*/
+}
+.row{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.grid:before,
+.grid:after,
+.row:before,
+.row:after{
+    content: " ";
+    display: table;
+}
+
+.grid:after,
+.row:after{
+    clear: both;
+}
+
+[class*='col-']{
+    width: 100%;
+    float: left;
+    min-height: 1px;
+}
+
+@media screen and (min-width: 320px){
+.col-wd-3{width: 25%;}
+.col-wd-4{width: 33.33333%;}
+.col-wd-5{width: 41.66667%;}
+.col-wd-6{width: 50%;}
+.col-wd-7{width: 58.33333%;}
+.col-wd-8{width: 66.66667%;}
+.col-wd-9{width: 75%;}
+.col-wd-10{width: 83.33333%;}
+.col-wd-11{width: 91.66667%;}
+.col-wd-12{width: 100%;}
+}
+
+@media screen and (min-width: 820px){
+.col-md-3{width: 25%;}
+.col-md-4{width: 33.33333%;}
+.col-md-5{width: 41.66667%;}
+.col-md-6{width: 50%;}
+.col-md-7{width: 58.33333%;}
+.col-md-8{width: 66.66667%;}
+.col-md-9{width: 75%;}
+.col-md-10{width: 83.33333%;}
+.col-md-11{width: 91.66667%;}
+.col-md-12{width: 100%;}
+}
+
+@media screen and (max-width: 840px){
+.grid{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .content p{
+        padding: 16px 28px;
+        text-align: center;
+    }
+}
