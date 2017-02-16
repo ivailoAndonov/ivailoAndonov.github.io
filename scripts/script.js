@@ -38,3 +38,5 @@ function headerHide() {
 var about = document.getElementById('about-me').addEventListener('click', function () {});
 
 
+console.log(window.innerWidth);
+console.log(window.innerHeight);

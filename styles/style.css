@@ -54,7 +54,9 @@ p{
 
 .logo{
     margin-top: 6px;
+    margin-bottom: 5px;
     margin-left: 6%;
+    display: inline;
 }
 
 .nav-menu-container{
@@ -83,10 +85,25 @@ ul li a:hover{
     text-decoration: underline;
 }
 
+/*img*/
+.img-wrapper{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.html{
+    margin-top: 6%;
+}
 
 /*header*/
 .header-wrapper{
-    background-image: url("../background img/background.jpg");
+    background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,12 +143,12 @@ article{
     margin-bottom: 120px;
 }*/
 .my-photo-container{
-    margin-top: 10px;
+    margin-top: 18px;
 }
 .my-photo{
     border-radius: 50%;
-    display: block;
-    margin: 12px auto;
+    /*display: block;*/
+    margin: auto;
     visibility:hidden;
 }
 .content{
@@ -169,7 +186,7 @@ article{
 
 /*Some of my code*/
 .my-code-wrapper{
-    background-image: url("../images/xrvdyzrgdw4-emile-perron.jpg");
+    background-image: url("../images/perron-compress-compressor.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,9 +205,9 @@ article{
 .portfolio{
     text-align: center;
 }
-.github{
+/*.github{
     margin: 20px;
-}
+}*/
 .github:hover{
     width: 220px;
     height: auto;
@@ -200,15 +217,19 @@ article{
 .email{
     text-align: center;
     margin: 20px;
+
+     font-size: 2.0em;
+    color: #00887A;
+    font-family: Arial, sans-serif;
 }
-.email a{
+/*.email a{
     font-size: 2.0em;
     color: #00887A;
     font-family: Arial, sans-serif; 
-}
-.email a:hover{
+}*/
+/*.email a:hover{
     color: #00554C;
-}
+}*/
 
 /*footer*/
 .footer{
@@ -252,6 +273,7 @@ article{
         width: 260px;
         margin-left: 0;
         margin-top: 8px;
+        margin-bottom: 0;
     }
     .nav-menu-container{
         float: none;
