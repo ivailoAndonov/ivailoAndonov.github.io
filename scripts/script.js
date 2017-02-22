@@ -1,6 +1,4 @@
 
-console.log();
-
 window.onscroll = debounceFunction.debounce(function () {
 
     let scrollerBody = document.body.scrollTop,
@@ -8,9 +6,6 @@ window.onscroll = debounceFunction.debounce(function () {
 
     if (scrollerBody > 10 || scrollerElement > 10) {
         document.getElementById("nav").className = "nav-white";
-        var i = 1;
-        console.log(i);
-        i += 1;
     } else {
         document.getElementById("nav").className = "nav-transperent";
     }
@@ -20,3 +15,5 @@ window.onscroll = debounceFunction.debounce(function () {
         myPhoto[0].classList.add("slideUp");
     }
 }, 50);
+
+

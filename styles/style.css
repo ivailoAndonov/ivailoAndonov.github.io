@@ -3,16 +3,6 @@ body, html{
     margin: 0;
     height: 100%;
 }
-
-
-.grid{
-    margin-right: 12%;
-    margin-left: 12%; 
-
-    /*position: relative;*/
-}
-
-
 h1, h2{
     font-family: 'Nixie One', cursive;
     margin: 0;
@@ -41,13 +31,18 @@ p{
     font-family: Arial, sans-serif;
     margin: 0;
     color: #707070;
-    /*color: gray;*/
-    /*font-weight: 200;*/
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .white{
     color: white;
 }
-
+.hide{
+    visibility: hidden;
+}
 
 /*nav*/
 
@@ -60,31 +55,26 @@ p{
     animation-duration: 0.6s;
     background-color: transparent;
 }
-
 .logo{
     margin-top: 6px;
     margin-bottom: 5px;
     margin-left: 6%;
     display: inline;
 }
-
 .nav-menu-container{
     margin-top: 10px;
     margin-right: 8%;
     font-family: Arial, sans-serif;
     float: right;
 }
-
 ul{
    padding: 0;
 }
-
 ul li{
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
 }
-
 ul li a{
     font-size: 1em;
     text-decoration: none;
@@ -92,30 +82,6 @@ ul li a{
 }
 ul li a:hover{
     text-decoration: underline;
-}
-
-/*img*/
-
-.img-wrapper{
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.html{
-    margin-top: 6%;
-}
-
-/*.eee{
-    height: 320px;
-}*/
-.pe{
-    margin: 20px;
 }
 
 /*header*/
@@ -128,48 +94,33 @@ img{
     background-attachment: fixed;
     width: auto;
     /*height: 680px;*/
-    /*min-height: 680px;*/
-    /*z-index: -1;*/
-
-    /*position: relative;*/
 }
-
 .header-content{
     position: fixed;    
     top: 45%;
     left: 50%;
     transform: translate(-50%);
-    /*transform: translate(-50%, -50%);*/
     text-align: center;
-
 }
-
 
 /*article*/
 
 article{
     box-shadow: 0 1px 30px #302F2B;
-    /*z-index: 2*/
 }
+
+/*about-me*/
+
 .about-me-wrapper{
     width: 100%;
-    /*height: 1500px;*/
     background-color: #FBFBFC;
     position: relative;
-    /*z-index: 2;*/
 }
-/*.about-me{
-    display: block;
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 120px;
-}*/
 .my-photo-container{
     margin-top: 18px;
 }
 .my-photo{
     border-radius: 50%;
-    /*display: block;*/
     margin: auto;
     visibility:hidden;
 }
@@ -186,13 +137,40 @@ article{
     border-radius: 2px;
 }
 
-
 /*skills*/
+
 .skills-wrapper{
     position: relative;
     background: white;
 }
+.green-header{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 2.0em;
+    color: #00887A;
+    font-family: Arial, sans-serif;
+}
+.center{
+    text-align: center;
+}
 
+/*img*/
+
+.img-wrapper{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 12px;
+}
+.mt{
+    margin-top: 6%;
+    /*height: 320px;*/
+}
+p.center{
+    margin: 20px;
+}
 
 /*Some of my code*/
 
@@ -202,12 +180,8 @@ article{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /*position: relative;*/
     width: auto;
-    /*height: 440px;*/
-
     position: relative;
-    /*z-index: 2;*/
 }
 .opacity{
     background-color: rgba(0, 0, 0, 0.5);
@@ -219,38 +193,17 @@ article{
 .portfolio{
     text-align: center;
 }
-/*.github{
-    margin: 20px;
-}*/
 .github:hover{
     width: 220px;
     height: auto;
 }
 
-
 /*Contact me*/
+
 .contacts-wrapper{
     background: white;
     position: relative;
 }
-
-.email{
-    text-align: center;
-    /*margin: 20px;*/
-    width: 100%;
-    margin-top: 10px;
-    font-size: 2.0em;
-    color: #00887A;
-    font-family: Arial, sans-serif;
-}
-/*.email a{
-    font-size: 2.0em;
-    color: #00887A;
-    font-family: Arial, sans-serif; 
-}*/
-/*.email a:hover{
-    color: #00554C;
-}*/
 
 /*footer*/
 
@@ -260,9 +213,6 @@ article{
     padding-bottom: 20px;
     z-index: 7;
     position: relative;
-}
-.center{
-    text-align: center;
 }
 .center a:first-child{
     color: black;
@@ -287,9 +237,9 @@ article{
     }
 }
 @media screen and (max-width: 840px){
-    /*header{
-        height: 620px;
-    }*/
+    .header-wrapper{
+    min-height:680px;
+    }
     ul li a{
         font-size: 1em;
     }
@@ -299,7 +249,6 @@ article{
     h2{
         font-size: 2em;
     }
-
     .nav-container{
         text-align: center;
     }
@@ -334,28 +283,7 @@ article{
     }
 }
 
-@media (max-width:840px){
-    .header-wrapper{
-min-height:680px;
-    }
-}
-/*@media (max-width:767px){
-    .header-wrapper{
-min-height:480px;
-    }
-}*/
-/*@media (max-width:520px){
-    .grid{
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-}*/
-
-
 /*Animations*/
-.hide{
-    visibility: hidden;
-}
 
 .nav-white{
     width: 100%;
@@ -395,38 +323,34 @@ min-height:480px;
     }
 }
 
+/*grid*/
 
-/*col-grid*/
 *,
 *:before,
 *:after{
     box-sizing: inherit;
 }
-
+.grid{
+    margin-right: 12%;
+    margin-left: 12%; 
+}
 .row{
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
 .grid:before,
 .grid:after,
 .row:before,
 .row:after{
     content: " ";
     display: table;
-}
-
-.grid:after,
-.row:after{
     clear: both;
 }
-
 [class*='col-']{
     width: 100%;
     float: left;
     min-height: 1px;
 }
-
 @media screen and (min-width: 320px){
 .col-wd-3{width: 25%;}
 .col-wd-4{width: 33.33333%;}
@@ -439,7 +363,6 @@ min-height:480px;
 .col-wd-11{width: 91.66667%;}
 .col-wd-12{width: 100%;}
 }
-
 @media screen and (min-width: 820px){
 .col-md-3{width: 25%;}
 .col-md-4{width: 33.32%;}
@@ -452,4 +375,3 @@ min-height:480px;
 .col-md-11{width: 91.66667%;}
 .col-md-12{width: 100%;}
 }
-

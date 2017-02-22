@@ -5,46 +5,43 @@
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My porfolio">
+    <meta name="author" content="Ivaylo Andonov">
     <title>My portfolio</title>
 
     <link type="text/css" href="styles/style.css" rel="stylesheet">
-    <!--<link type="twxt/css" href="styles/grid.css" rel="stylesheet">-->
     <link rel="stylesheet" href="styles/mouse/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 
 </head>
 
 <body>
-    <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>-->
-
     <!--nav-->
     <nav class="nav-transperent" id="nav">
         <div class="nav-container">
             <!--logo-->
-            <!--<img class="logo" src="background img/Logo 2.png" alt="logo" width="330px" height="auto">-->
             <img class="logo" src="images/Logo.png" alt="logo" width="330px" height="auto">
             <!--menu-->
             <div class="nav-menu-container">
-                <ul class="nav-menu-bar">
-                    <li>
-                        <a href="#" id="home">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#" id="#about-me">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#" id="technologies">SKILLS</a>
-                    </li>
-                    <li>
-                        <a href="#" id="contact">CONTACT</a>
-                    </li>
+                <ul>
+                  <li>
+    <a href="#" onclick="smoothScroll(document.getElementsByClassName('header-wrapper')[0])">HOME</a>
+</li>
+<li>
+    <a href="#" onclick="smoothScroll(document.getElementsByClassName('about-me-wrapper')[0])">ABOUT</a>
+</li>
+<li>
+    <a href="#" onclick="smoothScroll(document.getElementsByClassName('skills-wrapper')[0])">SKILLS</a>
+</li>
+<li>
+    <a href="#" onclick="smoothScroll(document.getElementsByClassName('contacts-wrapper')[0])">CONTACT</a>
+</li>
                 </ul>
             </div>
-
         </div>
     </nav>
     <header>
+        <!--header-->
         <div class="header-wrapper">
             <div class="header-content">
                 <h1>Hello! I am Ivaylo Andonov!</h1>
@@ -62,11 +59,10 @@
     </header>
 
     <article>
-        <!--about-me-->
-        <div class="about-me-wrapper" id="about-me">
+        <!--about me-->
+        <div class="about-me-wrapper">
             <div class="grid">
                 <div class="row">
-                    <!--<div class="about-me">-->
                     <h2 class="col-md-12">About me</h2>
                     <!--<div class="col-md-12"><h2>About me</h2><br><p>A passionate developer</p></div>-->
                     <div class="col-md-4 my-photo-container">
@@ -90,60 +86,57 @@
         <div class="skills-wrapper">
             <div class="grid">
                 <div class="row">
-                    <div class="skills-container">
-                        <h2>Technical skills</h2>
-                    </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <h2>Technical skills</h2>
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/html5-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="email">HTML</h3>
-                        <p class="center pe">tincidunt utwisi enim ad minim veniam, quis nostrud exewisi enim ad minim veniam, quis nostrud exe
-                            la
-                            nisl ut aliquip onsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        <h3 class="green-header">HTML</h3>
+                        <p class="center">tincidunt utwisi enim ad minim veniam, quis nostrud exewisi enim ad minim veniam, quis nostrud exe
+                            la nisl ut aliquip onsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
                             lobortis nisl ut aliquip ex ea co tincidunt ut laoreet</p>
                     </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/css3-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="email">CSS</h3>
-                        <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        <h3 class="green-header">CSS</h3>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
                     </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/javaScript-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="email">JavaScript</h3>
-                        <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        <h3 class="green-header">JavaScript</h3>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/jquery-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="email">jQuery</h3>
-                        <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        <h3 class="green-header">jQuery</h3>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/angular-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="email">Angular</h3>
-                        <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        <h3 class="green-header">Angular</h3>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="html col-md-4 eee .col-wd-12">
+                    <div class="mt col-md-4 .col-wd-12">
                         <div class="img-wrapper">
                             <img src="images/logos/nodeJs-compressor.png" alt="" width="auto" height="50">
                         </div>
-                        <h3 class="email">NodeJs</h3>
+                        <h3 class="green-header">NodeJs</h3>
                         <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
@@ -151,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <!--github-profile-->
+        <!--Some of my code-->
         <div class="my-code-wrapper">
             <div class="opacity">
                 <div class="grid">
@@ -174,7 +167,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Contact me</h2>
-                        <div class="email">ivailoandonov.andonov[at]gmail.com</div>
+                        <div class="green-header">ivailoandonov.andonov[at]gmail.com</div>
                     </div>
                 </div>
             </div>
@@ -190,7 +183,7 @@
         </div>
     </footer>
 
-    <script src="scripts/debounce-function.js"></script>
+    <script src="scripts/utils-functions.js"></script>
     <script src="scripts/script.js"></script>
 
 </body>
