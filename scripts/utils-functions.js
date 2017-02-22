@@ -10,7 +10,6 @@ var debounceFunction = (function () {
             }, wait);
         }
     }
-
     return { debounce: debounce };
 } ());
 
