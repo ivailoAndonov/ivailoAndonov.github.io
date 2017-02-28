@@ -12,16 +12,18 @@
     <meta name="author" content="Ivaylo Andonov">
     <title>My portfolio</title>
 
-    <link type="text/css" href="styles/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/mouse/style.css">
+    <link type="text/css" href="styles/css/styles.css" rel="stylesheet">
+    <!--<link type="text/css" href="styles/mouse/style.css" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 
 </head>
 
 <body>
     <!--nav-->
-    <nav class="nav-transperent" id="nav">
-        <div class="nav-container">
+    <nav>
+    <div class="nav-transperent" id="nav">
+        <div class="nav-wrapper">
+            <!--<div>-->
             <!--logo-->
             <img class="logo" src="images/Logo.png" alt="logo" width="330px" height="auto">
             <!--menu-->
@@ -42,6 +44,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </nav>
     <header>
         <!--header-->
@@ -54,7 +57,7 @@
             <!--Mouse animated-->
             <div class="mouse_wrapper">
                 <div class="mouse_animated">
-                    <div class="scroll"></div>
+                    <div class="mouse_scroller"></div>
                 </div>
             </div>
 
@@ -66,15 +69,16 @@
         <div class="about-me-wrapper">
             <div class="grid">
                 <div class="row">
-                    <h2 class="col-md-12">About me</h2>
+                    <h2 class="col-12">About me</h2>
                     <!--<div class="col-md-12"><h2>About me</h2><br><p>A passionate developer</p></div>-->
-                    <div class="col-md-4 my-photo-container">
+                    <div class="col-w-4 my-photo-container">
                         <img src="images/IMG_20170209_140209.png" class="my-photo" alt="my photo" width="200px" height="200px">
                     </div>
-                    <div class="col-md-8 content">
+                    <div class="col-w-8 resume">
                         <p>
-                            As part of Telerik Academy I had the chance to assimilate fundamental, but also specific types of knowledge about Programming
-                            as a whole. All the technologies I’ve been exploring gave me the freedom to reveal my flair how
+                            As part of <a href="https://telerikacademy.com/">Telerik Academy</a> I had the chance to assimilate fundamental, 
+                            but also specific types of knowledge about Programming as a whole. All the technologies
+                            I’ve been exploring gave me the freedom to reveal my flair how
                             a perfect project must be shaped. My passion now is mostly Front- End Developing. I enjoy the
                             process of generating an initial idea of a product, framing a content and finishing up with awesome
                             design. I simple quote helps me in my career: “You are what you believe!” – and I strongly believe
@@ -90,58 +94,56 @@
             <div class="grid">
                 <div class="row">
                     <h2>Technical skills</h2>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/html5-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="green-header">HTML</h3>
+                        <h3 class="main-color-header">HTML</h3>
                         <p class="center">tincidunt utwisi enim ad minim veniam, quis nostrud exewisi enim ad minim veniam, quis nostrud exe
                             la nisl ut aliquip onsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
                             lobortis nisl ut aliquip ex ea co tincidunt ut laoreet</p>
                     </div>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/css3-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="green-header">CSS</h3>
-                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        <h3 class="main-color-header">CSS</h3>
+                        <p class="center">Lotpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
                     </div>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/javaScript-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="green-header">JavaScript</h3>
+                        <h3 class="main-color-header">JavaScript</h3>
                         <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/jquery-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="green-header">jQuery</h3>
+                        <h3 class="main-color-header">jQuery</h3>
                         <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/angular-compressor.png" alt="" width="50px" height="50">
                         </div>
-                        <h3 class="green-header">Angular</h3>
-                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        <h3 class="main-color-header">Angular</h3>
+                        <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elitgna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="mt col-md-4 .col-wd-12">
+                    <div class="mt col-6 col-w-4">
                         <div class="img-wrapper">
                             <img src="images/logos/nodeJs-compressor.png" alt="" width="auto" height="50">
                         </div>
-                        <h3 class="green-header">NodeJs</h3>
+                        <h3 class="main-color-header">NodeJs</h3>
                         <p class="center pe">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                            ut laoreet dolorem, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
@@ -153,7 +155,8 @@
                 <div class="grid">
                     <div class="row">
                         <div class="portfolio-height">
-                            <div class="portfolio col-md-12">
+                            <!--<div class="portfolio">-->
+                                <div class="col-12">
                                 <h2 class="white">Chek some of my code</h2>
                                 <a href="https://github.com/ivailoAndonov">
                                     <img src="images/GitHub_Logo.png" alt="github-logo" class="github" width="200px" height="auto">
@@ -168,9 +171,9 @@
         <div class="contacts-wrapper">
             <div class="grid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <h2>Contact me</h2>
-                        <div class="green-header">ivailoandonov.andonov[at]gmail.com</div>
+                        <div class="main-color-header">ivailoandonov.andonov[at]gmail.com</div>
                     </div>
                 </div>
             </div>
@@ -178,8 +181,8 @@
     </article>
     <!--footer-->
     <footer>
-        <div class="footer">
-            <p class="center">Copyright &copy 2017
+        <div class="footer-wrapper">
+            <p class="footer-content">Copyright &copy; <span class="year"></span>
                 <a href="#">My portfolio</a> - Powered by
                 <a class="autor-name" href="#">ivailo Andonov</a>
             </p>

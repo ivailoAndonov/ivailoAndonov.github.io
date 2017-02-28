@@ -10,10 +10,12 @@ window.onscroll = debounceFunction.debounce(function () {
         document.getElementById("nav").className = "nav-transperent";
     }
 
-    if (scrollerBody > 500 || scrollerElement > 500) {
+    if (scrollerBody > 480 || scrollerElement > 480) {
         let myPhoto = document.getElementsByClassName("my-photo");
         myPhoto[0].classList.add("slideUp");
     }
 }, 50);
 
-
+let currentYear = new Date().getFullYear(),
+    year = document.getElementsByClassName('year')[0];
+year.innerHTML = currentYear;

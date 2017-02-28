@@ -1,0 +1,55 @@
+
+@keyframes whiteOn {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: white;
+    }
+}
+@-webkit-keyframes whiteOn{
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: white;
+    }
+}
+
+@keyframes whiteOff {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+@-webkit-keyframes whiteOff{
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slideUp{
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

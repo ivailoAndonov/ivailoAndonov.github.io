@@ -1,0 +1,62 @@
+
+@-webkit-keyframes mouse_move{
+    0%{top: 0;}
+    25%{top: 10px;}
+    50%{top: 0;}
+    75%{ top: 10px;}
+    100%{top: 0;}
+}
+@-moz-keyframes mouse_move{
+    0%{top: 0;}
+    25%{top: 10px;}
+    50%{top: 0;}
+    75%{ top: 10px;}
+    100%{top: 0;}
+}
+@-o-keyframes mouse_move{
+    0%{top: 0;}
+    25%{top: 10px;}
+    50%{top: 0;}
+    75%{ top: 10px;}
+    100%{top: 0;}
+}
+@keyframes mouse_move{
+    0%{top: 0;}
+    25%{top: 10px;}
+    50%{top: 0;}
+    75%{ top: 10px;}
+    100%{top: 0;}
+}
+.mouse_wrapper{
+    position: fixed;
+    top: 88%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.mouse_animated{
+    position: relative;
+    border: 3px solid #302F2B;
+    margin: 0 auto;
+    width: 23px;
+    height: 35px;
+    display: flex;
+    border-radius: 12px;
+    -webkit-animation: mouse_move 3s infinite;
+    -moz-animation: mouse_move 3s infinite;
+    -o-animation: mouse_move 3s infinite;
+    animation: mouse_move 3s infinite;
+}
+.mouse_scroller{
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #302F2B;
+    width: 0;
+    height: 7px;
+    border-radius: 3px;
+}
+
