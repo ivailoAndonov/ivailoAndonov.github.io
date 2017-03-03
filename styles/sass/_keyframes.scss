@@ -1,37 +1,45 @@
 
-@keyframes whiteOn {
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: white;
-    }
-}
-@-webkit-keyframes whiteOn{
-    from {
-        background-color: transparent;
-    }
-    to {
-        background-color: white;
-    }
-}
+// @keyframes whiteOn {
+//     from {
+//         background-color: transparent;
+//         box-shadow: transparent;
+//     }
+//     to {
+//         background-color: white;
+//         box-shadow: 0 1px 30px #302F2B;
+//     }
+// }
+// @-webkit-keyframes whiteOn{
+//     from {
+//         background-color: transparent;
+//         box-shadow: transparent;
+//     }
+//     to {
+//         background-color: white;
+//         box-shadow: 0 1px 30px #302F2B;
+//     }
+// }
 
-@keyframes whiteOff {
-    from {
-        background-color: white;
-    }
-    to {
-        background-color: transparent;
-    }
-}
-@-webkit-keyframes whiteOff{
-    from {
-        background-color: white;
-    }
-    to {
-        background-color: transparent;
-    }
-}
+// @keyframes whiteOff {
+//     from {
+//         background-color: white;
+//         box-shadow: 0 1px 30px #302F2B;
+//     }
+//     to {
+//         background-color: transparent;
+//         box-shadow: transparent;
+//     }
+// }
+// @-webkit-keyframes whiteOff{
+//     from {
+//         background-color: white;
+//         box-shadow: 0 1px 30px #302F2B;
+//     }
+//     to {
+//         background-color: transparent;
+//         box-shadow: transparent;
+//     }
+// }
 
 @keyframes slideUp {
     0% {
