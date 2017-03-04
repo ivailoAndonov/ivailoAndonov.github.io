@@ -228,6 +228,7 @@ article {
   position: relative;
   background: white; }
   .skills-wrapper .mt {
+    border: 1px solid white;
     margin-top: 6%;
     min-height: 320px; }
     .skills-wrapper .mt:hover {
@@ -246,10 +247,11 @@ article {
       height: auto;
       margin: 0 auto;
       position: relative;
-      margin-top: 12px; }
+      margin-top: 14px; }
     .skills-wrapper .mt p {
+      font-size: 16px;
       text-align: center;
-      margin: 20px; }
+      padding: 10px; }
 
 .my-code-wrapper {
   background-image: url("../../images/perron-compress-compressor.jpg");
