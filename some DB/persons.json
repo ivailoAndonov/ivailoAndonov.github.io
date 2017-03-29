@@ -1,0 +1,31 @@
+{
+  "persons": [
+    {
+      "name": "Pesho",
+      "age": "33",
+      "foods": {
+        "likes": [
+          "pizza",
+          "meat"
+        ],
+        "dislikes": [
+          "peppers",
+          "pumpkin"
+        ]
+      }
+    },
+    {
+      "name": "Toncho",
+      "age": "44",
+      "car": "VW"
+    },
+    {
+      "name": "Poli",
+      "age": "21",
+      "car": [
+        "Mini",
+        "Audi A1"
+      ]
+    }
+  ]
+}
