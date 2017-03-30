@@ -10,7 +10,7 @@ window.onscroll = debounceFunction.debounce(function () {
         document.getElementById("nav").className = "nav-transperent";
     }
 
-    if (scrollerBody > 480 || scrollerElement > 480) {
+    if (scrollerBody > 450 || scrollerElement > 450) {
         let myPhoto = document.getElementsByClassName("my-photo");
         myPhoto[0].classList.add("slideUp");
     }
