@@ -421,7 +421,10 @@ article {
   .mouse_wrapper {
     top: 80%; }
   .resume p {
-    padding: 16px 28px; } }
+    padding: 16px 28px; }
+  .skills-wrapper .mt {
+    min-height: 0;
+    margin-top: 9%; } }
 
 @media screen and (max-width: 480px) {
   .header-wrapper {

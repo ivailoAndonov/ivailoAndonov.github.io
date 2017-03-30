@@ -1,0 +1,26 @@
+{
+  "name": "ivailo_andonov",
+  "version": "0.0.1",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "./node_modules/.bin/node-sass styles/sass/styles.scss styles/css/styles.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivailoAndonov/ivailoAndonov.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "ivailo_andonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivailoAndonov/ivailoAndonov.github.io/issues"
+  },
+  "homepage": "https://github.com/ivailoAndonov/ivailoAndonov.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
