@@ -7,7 +7,7 @@
     <meta name="author" content="Ivaylo Andonov">
     <title>My portfolio</title>
 
-    <link type="text/css" href="styles/css/styles.css" rel="stylesheet">
+    <link type="text/css" href="styles/css/style.min.css" rel="stylesheet">
     <!--<link type="text/css" href="styles/mouse/style.css" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 
@@ -24,16 +24,16 @@
             <div class="nav-menu-container">
                 <ul>
                   <li>
-    <a href="#" onclick="smoothScroll(document.getElementsByClassName('header-wrapper')[0])">HOME</a>
+    <a href="#" onclick="smoothScroll.scroll(document.getElementsByClassName('header-wrapper')[0])">HOME</a>
 </li>
 <li>
-    <a href="#" onclick="smoothScroll(document.getElementsByClassName('about-me-wrapper')[0])">ABOUT</a>
+    <a href="#" onclick="smoothScroll.scroll(document.getElementsByClassName('about-me-wrapper')[0])">ABOUT</a>
 </li>
 <li>
-    <a href="#" onclick="smoothScroll(document.getElementsByClassName('skills-wrapper')[0])">SKILLS</a>
+    <a href="#" onclick="smoothScroll.scroll(document.getElementsByClassName('skills-wrapper')[0])">SKILLS</a>
 </li>
 <li>
-    <a href="#" onclick="smoothScroll(document.getElementsByClassName('contacts-wrapper')[0])">CONTACT</a>
+    <a href="#" onclick="smoothScroll.scroll(document.getElementsByClassName('contacts-wrapper')[0])">CONTACT</a>
 </li>
                 </ul>
             </div>
@@ -176,9 +176,10 @@
         </div>
     </footer>
 
-    <script src="scripts/utils.js"></script>
-    <script src="scripts/script.js"></script>
-
+    <script src="scripts/smoothScroll.min.js"></script>
+    <script src="scripts/debounceFunc.min.js"></script>
+    <script src="scripts/script.min.js"></script>
+    
 </body>
 
 </html>

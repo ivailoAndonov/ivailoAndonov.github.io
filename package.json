@@ -4,7 +4,11 @@
   "description": "portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "./node_modules/.bin/node-sass styles/sass/styles.scss styles/css/styles.css -w",
+    "sass-w": "node-sass styles/sass/styles.scss styles/css/style.css -w",
+    "sass": "node-sass styles/sass/styles.scss styles/css/style.css",
+    "minify:css": "minify styles/css/style.css ",
+    "minify:js": "minify scripts/script.js && minify scripts/debounceFunc.js && minify scripts/smoothScroll.js",
+    "dist": "npm run sass && npm run minify:css && npm run minify:js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +25,7 @@
   },
   "homepage": "https://github.com/ivailoAndonov/ivailoAndonov.github.io#readme",
   "dependencies": {
-    "node-sass": "^4.5.2"
+    "minifier": "0.8.1",
+    "node-sass": "4.5.2"
   }
 }

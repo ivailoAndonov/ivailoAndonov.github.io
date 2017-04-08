@@ -118,10 +118,9 @@ h3 {
   margin-bottom: 6%; }
 
 p {
-  font-family: Arial, sans-serif;
-  color: #606060;
-  letter-spacing: 0.04em;
-  line-height: 140%; }
+  font-family: Verdana, Geneva, sans-serif;
+  color: #515151;
+  line-height: 130%; }
 
 img {
   display: block;
@@ -140,7 +139,7 @@ a {
   margin-top: 10px;
   font-size: 2.0em;
   color: #00887A;
-  font-family: Arial, sans-serif; }
+  font-family: Verdana, Geneva, sans-serif; }
 
 .hide {
   visibility: hidden; }
@@ -165,7 +164,7 @@ a {
 .nav-menu-container {
   margin-top: 10px;
   margin-right: 8%;
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   float: right; }
   .nav-menu-container ul {
     margin-top: 16px;
@@ -192,7 +191,7 @@ a {
   -o-background-size: cover;
   background-size: cover; }
 
-.header-wrapper .header-content {
+.header-content {
   position: fixed;
   top: 45%;
   left: 50%;

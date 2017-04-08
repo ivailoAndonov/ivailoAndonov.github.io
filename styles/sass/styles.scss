@@ -3,7 +3,8 @@
 @import 'keyframes';
 
 $headers-fonts: 'Nixie One', cursive;
-$second-font: Arial, sans-serif;
+$second-font: Verdana, Geneva, sans-serif;
+// $second-font: Arial, sans-serif;
 $main-color: #00887A;
 $box-shadou: 0 1px 30px #302F2B;
 $border: 1px solid lightgrey;
@@ -45,10 +46,9 @@ h3{
 }
 p{
     font-family: $second-font;
-    color: #606060;
-    // color: #707070;
-    letter-spacing: 0.04em;
-    line-height: 140%;
+    color: #515151;
+    // letter-spacing: 0.04em;
+    line-height: 130%;
 }
 img {
     display: block;
@@ -126,21 +126,17 @@ a{
   -o-background-size: cover;
   background-size: cover;
 }
-// header =====================
-.header-wrapper{
-    // background-image: url("../../images/background-compressor.jpg");
-    // @include set-background-img();
-    // min-height: 900px;
 
-    .header-content{
-        position: fixed;
-        top: 45%;
-        left: 50%;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-        text-align: center;
-    }
+// header =====================
+.header-content{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    text-align: center;
 }
+
 
 // article ===================
 article{

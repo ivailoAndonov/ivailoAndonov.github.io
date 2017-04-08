@@ -1,7 +1,7 @@
 
-window.onscroll = debounceFunction.debounce(function () {
+window.onscroll = debounceFunc.debounce(function () {
 
-    let scrollerBody = document.body.scrollTop,
+    var scrollerBody = document.body.scrollTop,
         scrollerElement = document.documentElement.scrollTop;
 
     if (scrollerBody > 10 || scrollerElement > 10) {
@@ -11,11 +11,11 @@ window.onscroll = debounceFunction.debounce(function () {
     }
 
     if (scrollerBody > 450 || scrollerElement > 450) {
-        let myPhoto = document.getElementsByClassName("my-photo");
+        var myPhoto = document.getElementsByClassName("my-photo");
         myPhoto[0].classList.add("slideUp");
     }
 }, 50);
 
-let currentYear = new Date().getFullYear(),
+var currentYear = new Date().getFullYear(),
     year = document.getElementsByClassName('year')[0];
 year.innerHTML = currentYear;
