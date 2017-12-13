@@ -137,6 +137,7 @@ a {
   text-align: center;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 0;
   font-size: 2.0em;
   color: #00887A;
   font-family: Verdana, Geneva, sans-serif; }
@@ -246,7 +247,7 @@ article {
       height: 60px;
       margin: 0 auto;
       position: relative;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 10px; }
       .skills-wrapper .mt .img-wrapper img {
         transition: all .2s; }
